@@ -4,8 +4,10 @@ import { Company } from "./Company";
 
 const user = new User();
 const company = new Company();
+const googleMap = new CustomMap("#map");
 
 console.log(user);
 console.log(company);
 
-new CustomMap("#map");
+googleMap.addMarker(user);
+googleMap.addMarker(company);
